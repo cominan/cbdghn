@@ -12,12 +12,12 @@ import sytles from "./css/footerslide.module.css";
 
 // import required modules
 import { Autoplay } from "swiper";
+import { giaoHangNhanhServices } from "../../../services/ghn.services";
 
 export default function SlideFooterContent() {
   const [logos, setLogo] = useState([])
   useEffect(() => {
-    axios('https://appghn.herokuapp.com/logo')
-      .then(logos => setLogo(logos.data))
+   giaoHangNhanhServices.getdataLogo().then(result => setLogo(result.data))
   }, [])
   return (
     <>

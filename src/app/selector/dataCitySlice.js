@@ -8,7 +8,7 @@ export const DataCitySlice = createSlice({
             citi: '',
             districts: '',
             wards: '',
-            all: []
+            all: [],
         }
     },
     reducers: {
@@ -24,12 +24,17 @@ export const DataCitySlice = createSlice({
         dataAll: (state, action) => {
             state.initValue.all = action.payload
         },
-        subport : (state, action) => {
+        subport: (state, action) => {
             console.log(action.payload);
-        }
+        },
     }
 })
 
 
-export const { dataCity, dataDistricts, dataWards, dataAll, subport } = DataCitySlice.actions
+export const { dataCity
+    , dataDistricts
+    , dataWards
+    , dataAll
+    , subport } = DataCitySlice.actions
+export const location = (state) => state.city.initValue.all
 export default DataCitySlice.reducer

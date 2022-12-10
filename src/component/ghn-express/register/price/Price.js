@@ -49,8 +49,8 @@ export default function Price() {
                         <li className=''>
                             <div onClick={(e) => Open('parent1', 'i1', 'i2', 'province')} id='parent1' className='h-[66px]  relative items-center active parent hover:drop-shadow-[20px] hover:transition-all ease-in-out delay-75 flex justify-start py-8 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
                                 <span className='w-[25px] h-[25px]'>
-                                    <img id='i1' className='img1 max-w-full w-[25px] h-[25px]' src="//theme.hstatic.net/200000472237/1000829412/14/sv_price_ic1.png?v=491"></img>
-                                    <img id='i2' className='img2 max-w-full w-[25px] h-[25px]' src="///theme.hstatic.net/200000472237/1000829412/14/sv_price_icw1.png?v=491"></img>
+                                    <img id='i1' alt='hello' className='img1 max-w-full w-[25px] h-[25px]' src="//theme.hstatic.net/200000472237/1000829412/14/sv_price_ic1.png?v=491"></img>
+                                    <img id='i2' alt='hello' className='img2 max-w-full w-[25px] h-[25px]' src="///theme.hstatic.net/200000472237/1000829412/14/sv_price_icw1.png?v=491"></img>
                                 </span>
                                 <span className='ml-8 text-3xl font-semibold'>Bảng giá nội tỉnh</span>
                             </div>
@@ -58,8 +58,8 @@ export default function Price() {
                         <li className=''>
                             <div onClick={(e) => Open('parent2', 'i3', 'i4', 'leangue')} id='parent2' className='items-center parent hover:drop-shadow-[20px] hover:transition-all ease-in-out delay-75 flex justify-start py-8 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
                                 <span className='w-[25px] h-[25px]'>
-                                    <img id='i3' className='img1 max-w-full w-[25px] h-[25px]' src="//theme.hstatic.net/200000472237/1000829412/14/sv_price_ic1.png?v=491"></img>
-                                    <img id='i4' className='img2 max-w-full w-[25px] h-[25px]' src="///theme.hstatic.net/200000472237/1000829412/14/sv_price_icw1.png?v=491"></img>
+                                    <img id='i3' alt='hello' className='img1 max-w-full w-[25px] h-[25px]' src="//theme.hstatic.net/200000472237/1000829412/14/sv_price_ic1.png?v=491"></img>
+                                    <img id='i4' alt='hello' className='img2 max-w-full w-[25px] h-[25px]' src="///theme.hstatic.net/200000472237/1000829412/14/sv_price_icw1.png?v=491"></img>
                                 </span>
                                 <span className='ml-8 text-3xl font-semibold'>Bảng giá nội vùng</span>
                             </div>
@@ -67,8 +67,8 @@ export default function Price() {
                         <li className=''>
                             <div onClick={(e) => Open('parent3', 'i5', 'i6', 'special')} id='parent3' className='items-center parent hover:drop-shadow-[20px] hover:transition-all ease-in-out delay-75 flex justify-start py-8 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
                                 <span className='w-[25px] h-[25px]'>
-                                    <img id='i5' className='img1 max-w-full w-[25px] h-[25px]' src="//theme.hstatic.net/200000472237/1000829412/14/sv_price_ic1.png?v=491"></img>
-                                    <img id='i6' className='img2 max-w-full w-[25px] h-[25px]' src="///theme.hstatic.net/200000472237/1000829412/14/sv_price_icw1.png?v=491"></img>
+                                    <img id='i5' alt='hello' className='img1 max-w-full w-[25px] h-[25px]' src="//theme.hstatic.net/200000472237/1000829412/14/sv_price_ic1.png?v=491"></img>
+                                    <img id='i6' alt='hello' className='img2 max-w-full w-[25px] h-[25px]' src="///theme.hstatic.net/200000472237/1000829412/14/sv_price_icw1.png?v=491"></img>
                                 </span>
                                 <span className='ml-8 text-3xl font-semibold'>Bảng giá liên vùng đặc biệt</span>
                             </div>
@@ -77,8 +77,8 @@ export default function Price() {
                             <a href='/price/view-detail' className='hover:no-underline '>
                                 <div onClick={(e) => Open('parent4', 'i7', 'i8', e)} id='parent4' className='items-center parent hover:drop-shadow-[20px] hover:transition-all ease-in-out delay-75 flex justify-start py-8 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
                                     <span className='w-[25px] h-[25px]'>
-                                        <img id='i7' className='img1 max-w-full w-[25px] h-[25px]' src="//theme.hstatic.net/200000472237/1000829412/14/sv_price_ic1.png?v=491"></img>
-                                        <img id='i8' className='img2 max-w-full w-[25px] h-[25px]' src="///theme.hstatic.net/200000472237/1000829412/14/sv_price_icw1.png?v=491"></img>
+                                        <img id='i7' alt='hello' className='img1 max-w-full w-[25px] h-[25px]' src="//theme.hstatic.net/200000472237/1000829412/14/sv_price_ic1.png?v=491"></img>
+                                        <img id='i8' alt='hello' className='img2 max-w-full w-[25px] h-[25px]' src="///theme.hstatic.net/200000472237/1000829412/14/sv_price_icw1.png?v=491"></img>
                                     </span>
                                     <span className='ml-8 text-3xl font-semibold'>Xem bảng giá chi tiết</span>
                                 </div>

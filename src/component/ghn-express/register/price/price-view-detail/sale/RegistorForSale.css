@@ -23,8 +23,3 @@
 .toggle_input:checked~.toggle_label {
     background-color: #e45f20;
 }
-
-/* .toggle_input~.toggle_label {
-    background-color: white;
-} */
-

@@ -1,5 +1,5 @@
 .location {
-    background: #e45f20;
+    background: #e45f20 !important;
     position: relative;
     box-sizing: border-box;
     transition: 0.5s;
@@ -21,7 +21,6 @@
     transform-origin: left;
     color: black;
     border-radius: 6px;
-
 }
 
 
