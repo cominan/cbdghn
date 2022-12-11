@@ -12,6 +12,7 @@ export default function Login() {
     const { register, handleSubmit, formState: { errors } } = useForm()
     const navigate = useNavigate()
     const handleLoginEmailPsw = (data) => {
+        console.log('1');
         signInWithEmailAndPassword(auth, data.email, data.password)
             .then((userCredential) => {
                 // Signed in 

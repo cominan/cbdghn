@@ -1,5 +1,5 @@
 import { signOut } from 'firebase/auth';
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { AiFillCaretDown, AiOutlineLeft, AiOutlineMenu, AiOutlineRight, AiOutlineSearch } from "react-icons/ai";
 import { BsTelephonePlus } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
@@ -63,15 +63,18 @@ export default function Header() {
     }
     const [hideenModal, setHiddenModal] = useState(false)
     const redirect = useNavigate()
-    const user = useContext(authProvider)
-    console.log(user);
+    let user = useContext(authProvider)
+
 
     const handleLogout = () => {
+
         signOut(auth)
             .then(() => redirect('/registor'))
             .catch(() => console.log('Logout failed'))
 
     }
+
+
 
     return (
         <div className='h-[86px] fixed w-[101%] z-20 laptop:-ml-24'>
@@ -262,12 +265,13 @@ export default function Header() {
 
                     <div className='laptop:flex laptop:items-center tablet:pt-6 mobile:pt-6 laptop:pb-10 text-center'>
 
-                        {user ?
+                        {user !== undefined ?
 
                             <div className='flex w-[250px] items-center relative'>
                                 {
                                     user.photoURL ?
-                                        <img className='rounded-full w-[40px] h-[40px] mr-2' src={user.photoURL}></img> :
+                                        <img className='rounded-full w-[40px] h-[40px] mr-2' src={user.photoURL}></img>
+                                        :
                                         <p className='mr-2 text-2xl font-medium'>Xin chào</p>
                                 }
                                 <p className='font-medium text-2xl mr-2'>{user.displayName}</p>
@@ -297,7 +301,7 @@ export default function Header() {
                                 }
                             </div> :
 
-                            <div>
+                            <div className='flex'>
                                 <a href='/registor' className='hover:no-underline'>
                                     <button
                                         className='btn primary mobile:hidden laptop:block'>
@@ -306,13 +310,15 @@ export default function Header() {
                                 </a>
                                 <div
                                     className=
-                                    'flex border-2 tablet:w-[710px] mobile:w-[80%] mobile:ml-6 justify-between laptop:w-auto mr-4 tablet:ml-4 p-2 rounded-xl'>
+                                    'flex border-2 tablet:w-[710px] mobile:w-[80%] mobile:ml-6 justify-between laptop:w-[200px] mr-4 tablet:ml-4 p-2 rounded-xl'>
                                     <input className='focus:outline-none w-full'></input>
                                     <a
                                         href='/pages/notification' className='text-4xl'>
                                         <AiOutlineSearch />
                                     </a>
-                                </div></div>}
+                                </div>
+                            </div>
+                        }
                         <div className=
                             'laptop:hidden flex text-5xl items-center tablet:ml-0 tablet:justify-between mobile:justify-between'>
                             <AiOutlineMenu onClick={handleModalTablet} />

@@ -22,9 +22,10 @@ export default function RegistorwithAxios() {
   const password = useRef()
   password.current = watch('password', '')
 
+
+
   const handleLogin = async () => {
     const { additionalUserInfo, user } = await firebase.auth().signInWithPopup(new FacebookAuthProvider())
-
     if (additionalUserInfo?.isNewUser) {
       addDocuments('inforUser', {
         displayName: user.displayName,
@@ -67,12 +68,17 @@ export default function RegistorwithAxios() {
 
   }
   const navigate = useNavigate()
+
   const handleGoHomePage = () => {
     navigate('/')
   }
+  
   const handleLogins = () => {
     navigate('/login')
   }
+
+
+
   return (
     <div className='grid grid-cols-4 m-0'>
       <div className='laptop:block col-span-1 mobile:hidden'>
@@ -208,6 +214,7 @@ export default function RegistorwithAxios() {
                               Registor
                             </button>
                             <button
+                            type='button'
                               onClick={handleGoHomePage}
                               className='items-center mobile:hidden tablet:flex'>
                               <BsChevronDoubleLeft />
