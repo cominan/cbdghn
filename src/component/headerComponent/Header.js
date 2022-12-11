@@ -270,7 +270,9 @@ export default function Header() {
                             <div className='flex w-[250px] items-center relative'>
                                 {
                                     user.photoURL ?
-                                        <img className='rounded-full w-[40px] h-[40px] mr-2' src={user.photoURL}></img>
+                                        <img
+                                            className='rounded-full w-[40px] h-[40px] mr-2'
+                                            src={user.photoURL}></img>
                                         :
                                         <p className='mr-2 text-2xl font-medium'>Xin chào</p>
                                 }
