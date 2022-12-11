@@ -87,7 +87,7 @@ export default function RegistorwithAxios() {
           src="https://storage.googleapis.com/online-prod-public/notifications%2F2022%2FNovember%2F18%2F%5Bd67aa596-8b60-4064-8ee9-8280c3e5df5d%5D1910.jpg"
           alt="banner"></img>
       </div>
-      <div className='col-span-3'>
+      <div className='laptop:col-span-3 mobile:col-span-4'>
         <section className="h-[100vh]" style={{ backgroundColor: '#eee' }}>
           <div className="container h-100">
             <div className="row d-flex justify-content-center align-items-center h-100">

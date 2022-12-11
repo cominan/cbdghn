@@ -384,6 +384,13 @@ export default function Header() {
                                             1900 636677
                                         </p>
                                     </span>
+                                    <div className='mt-3'>
+                                        <button
+                                            onClick={() => redirect('/registor')}
+                                            className='bg-primary p-4'>
+                                            Đăng ký/đăng nhập
+                                        </button>
+                                    </div>
                                 </div>
 
 
