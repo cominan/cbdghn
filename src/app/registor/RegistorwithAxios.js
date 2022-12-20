@@ -10,7 +10,7 @@ import {
   BsKeyFill,
   BsPencilSquare
 } from "react-icons/bs";
-import { useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import { auth } from '../firebase/configfb';
 import { addDocuments, generateKeywords } from '../firebase/service';
 
@@ -21,7 +21,6 @@ export default function RegistorwithAxios() {
   const { register, handleSubmit, watch, formState: { errors } } = useForm()
   const password = useRef()
   password.current = watch('password', '')
-
 
 
   const handleLogin = async () => {
@@ -37,7 +36,8 @@ export default function RegistorwithAxios() {
       })
     }
   }
-
+  
+  const navigate = useNavigate()
 
   const sigInwithEmailAndPsd = async (data) => {
     const auths = getAuth()
@@ -50,7 +50,7 @@ export default function RegistorwithAxios() {
         updateProfile(auths.currentUser, {
           displayName: data.name
         }).then(() => console.log('success'))
-
+        
 
         addDocuments('userEmail', {
           displayName: data.name,
@@ -58,6 +58,7 @@ export default function RegistorwithAxios() {
           psw: password.current
         })
 
+        navigate('/')
       })
       .catch((error) => {
         // const errorCode = error.code;
@@ -67,7 +68,6 @@ export default function RegistorwithAxios() {
       });
 
   }
-  const navigate = useNavigate()
 
   const handleGoHomePage = () => {
     navigate('/')
@@ -200,7 +200,7 @@ export default function RegistorwithAxios() {
                             <input
                               {...register('argree', { required: true })}
                               name='argree'
-                              className="form-check-input w-[20px] !mr-8"
+                              className="form-check-input w-[20px] mobile:h-[20px] !mr-8"
                               type="checkbox" id="form2Example3c" />
                             <label className="form-check-label mt-2" htmlFor="form2Example3">
                               I agree all statements in <a href="#!">Terms of service</a>

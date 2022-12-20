@@ -1,8 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
 export default function JoinWithUs() {
     return (
-        <div className='bg-[#e9f8ff] tablet:-mx-28 relative'>
+        <div className='bg-[#e9f8ff] relative dark:!bg-dark dark:text-white'>
             <div className='tablet:ml-20 tablet:flex'>
                 <div className='tablet:ml-20 pt-48'>
                     <h3 className='tablet:text-7xl mobile:text-5xl mb-10 tracking-wide font-semibold leading-[50px]'>Bạn muốn tham gia cùng<br></br> chúng tôi</h3>

@@ -10,7 +10,7 @@
 .ghn::after {
     content: '';
     position: absolute;
-    background-color: #f3f2fd;
+    background-color: white;
     display: block;
     bottom: -23px;
     left: 10%;
@@ -18,7 +18,7 @@
     border-style: solid;
     border-color: transparent white transparent transparent;
 }
-
+ 
 .people::after {
     content: '';
     position: absolute;

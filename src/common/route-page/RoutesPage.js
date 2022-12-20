@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Switch } from 'react-router-dom'
 import Contact from '../../component/contact-ghn/Contact'
 import Content from '../../component/content/Content'
 import Notification from '../../component/frames/Notification'

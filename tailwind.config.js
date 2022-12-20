@@ -1,20 +1,26 @@
 /** @type {import('tailwindcss').Config} */
+
+const { transparent } = require('tailwindcss/colors');
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
+ 
   theme: {
     extend: {
       colors: {
-        'primary': '#e45f20'
+        'primary': '#e45f20',
+        'dark':'#1e293b'
       },
       backgroundImage: {
         'ghn': "url('https://theme.hstatic.net/200000472237/1000829412/14/mega-icon-sv-l1.png?v=487')",
         'ahamove': "url('//theme.hstatic.net/200000472237/1000829412/14/mega-icon-sv-l3.png?v=487')"
-      }
+      },
     },
     screens: {
-      
+
       'mobile': '360px',
 
       'tablet': '640px',
@@ -27,6 +33,8 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
     },
   },
-  plugins: [],
-
+  plugins: [
+    require('flowbite/plugin')
+  ],
+  darkMode: "class",
 }

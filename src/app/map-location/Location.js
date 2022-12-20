@@ -39,18 +39,19 @@ const Location = () => {
             }
         }
         //call api
-       renderCity(Location)
-    }, [Location])
+        renderCity(Location)
+    }, [Location, dispatch])
 
 
 
     return (
         <div
             className=
-            "container laptop:max-w-xl laptop:ml-32 tablet:mb-10 laptop:mb-0 shadow-2xl border-2">
+            "container laptop:max-w-xl text-center laptop:ml-20 tablet:mb-10 laptop:mb-0 shadow-2xl border-2">
             <select
                 name="city"
-                className="mt-10 w-full border-2 h-16 focus:outline-none text-2xl font-light mb-3"
+                className=
+                "!border-none dark:text-black mt-10 px-2 w-[95%] focus:outline-none focus:ring-0 focus:border-zinc-600 h-16 text-2xl font-light mb-3"
                 id="city"
                 aria-label=".form-select-lg">
                 <option value=''>
@@ -59,7 +60,8 @@ const Location = () => {
             </select>
             <select
                 name="district"
-                className="mt-10 w-full border-2 h-16 focus:outline-none text-2xl font-light mb-3"
+                className=
+                "!border-none dark:text-black mt-10 px-2 w-[95%] border-2 h-16 focus:outline-none focus:ring-0 focus:border-zinc-600 text-2xl font-light mb-3"
                 id="district"
                 aria-label=".form-select-lg">
                 <option value=''>
@@ -68,7 +70,8 @@ const Location = () => {
             </select>
             <select
                 name="ward"
-                className="mt-10 w-full border-2 h-16 focus:outline-none text-2xl font-light"
+                className=
+                "!border-none dark:text-black mt-10 mb-10 px-2 w-[95%] border-2 h-16 focus:outline-none focus:ring-0 focus:border-zinc-600 text-2xl font-light"
                 id="ward"
                 aria-label=".form-select-lg">
                 <option value=''>

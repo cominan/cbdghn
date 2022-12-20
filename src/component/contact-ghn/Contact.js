@@ -5,7 +5,7 @@ export default function Contact() {
     const srcIframe = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5432133941067!2d106.66192551526032!3d10.769644162262596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528ca8aab0255%3A0x4b47df7371d378c9!2zQ8SDbiBI4buZIFJpdmVyYSBQYXJrIFPDoGkgR8Oybg!5e0!3m2!1sen!2s!4v1571889194569!5m2!1sen!2s"
     const { register, handleSubmit, formState: { errors } } = useForm()
     return (
-        <div className='laptop:mt-40 mobile:mt-56 container tablet:mx-6'>
+        <div className='laptop:mt-40 mobile:mt-56 container'>
 
             <div className='relative flex '>
 
@@ -32,7 +32,7 @@ export default function Contact() {
             </div>
 
 
-            <div className='tablet:grid grid-cols-2 mt-20'>
+            <div className='tablet:grid grid-cols-2 mx-2 mt-20'>
 
 
                 <div className='col-span-1'>
@@ -98,7 +98,7 @@ export default function Contact() {
                         <input
                             {...register('fullName', { required: true })}
                             name='fullName'
-                            className='w-full p-4 border-2 mt-16 focus:outline-none rounded-lg text-2xl'
+                            className='w-full p-4 border-2 mt-16 focus:outline-none dark:!bg-dark dark:text-white rounded-lg text-2xl'
                             placeholder='Tên của bạn'>
                         </input>
                         {
@@ -111,7 +111,7 @@ export default function Contact() {
                             <input
                                 {...register('email', { required: true })}
                                 name='email'
-                                className='w-full p-4 border-2 mt-8 focus:outline-none rounded-lg text-2xl'
+                                className='w-full p-4 border-2 mt-8 focus:outline-none dark:!bg-dark dark:text-white rounded-lg text-2xl'
                                 placeholder='Email của bạn'>
                             </input>
                             {
@@ -123,7 +123,7 @@ export default function Contact() {
                             <input
                                 {...register('phone', { required: true })}
                                 name='phone'
-                                className='w-full p-4 border-2 mt-8 focus:outline-none rounded-lg text-2xl'
+                                className='w-full p-4 border-2 mt-8 focus:outline-none dark:!bg-dark dark:text-white rounded-lg text-2xl'
                                 placeholder='Số điện thoại của bạn'>
                             </input>
                             {
@@ -136,7 +136,7 @@ export default function Contact() {
                         <textarea
                             {...register('body')}
                             name='body'
-                            className='w-full h-60 p-4 border-2 mt-8 focus:outline-none rounded-lg text-2xl'
+                            className='w-full h-60 p-4 border-2 mt-8 focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 focus:border-zinc-600 rounded-lg text-2xl'
                             placeholder='Nội dung cần tư vấn'>
                         </textarea>
                     </div>

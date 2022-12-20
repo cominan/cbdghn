@@ -46,7 +46,7 @@ export default function GhnFullfilment() {
     }
     return (
         <div className='laptop:mt-36 mobile:mt-56 tablet:mt-44'>
-            <div className='tablet:-mx-20'>
+            <div className=''>
                 <picture>
                     <source srcSet="//theme.hstatic.net/200000472237/1000829412/14/banner-sv-kho.jpg?v=509"></source>
                     <img src="//theme.hstatic.net/200000472237/1000829412/14/banner-sv-kho.jpg?v=509" alt="Dịch vụ kho bãi và xử lý hàng hóa"></img>

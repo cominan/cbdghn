@@ -47,7 +47,7 @@ function RegistorForm(props) {
     const fileType = "rar, zip, doc, docx, pdf, <1MB"
 
     return (
-        <div className='w-[600px] p-3 border-[1px] mt-[30%] z-[4] rounded-xl m-auto bg-white shadow-md'>
+        <div className='w-[600px] p-3 dark:!bg-dark dark:text-white border-[1px] mt-[30%] z-[4] rounded-xl m-auto bg-white shadow-md'>
             <span className='ml-[30%] flex'>
                 <h3 className='text-4xl font-bold'>THÔNG TIN CÁ NHÂN</h3>
                 <button
@@ -81,7 +81,7 @@ function RegistorForm(props) {
                         <input
                             {...register('fullName', { required: true })}
                             name='fullName'
-                            className='focus:outline-none border-2 py-2 w-[90%] rounded-lg'>
+                            className='focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 focus:border-zinc-600 border-2 py-2 w-[90%] rounded-lg'>
                         </input>
                         {errors.fullName &&
                             <p className='absolute text-red-500 italic'>
@@ -99,7 +99,7 @@ function RegistorForm(props) {
                         <input
                             {...register('email', { required: true })}
                             name='email'
-                            className='focus:outline-none border-2 py-2 w-[90%] rounded-lg'>
+                            className='focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 focus:border-zinc-600 border-2 py-2 w-[90%] rounded-lg'>
                         </input>
                         {errors.email &&
                             <p className='absolute text-red-500 italic'>
@@ -125,7 +125,7 @@ function RegistorForm(props) {
                         <input
                             {...register('phone', { required: true })}
                             name='phone'
-                            className='focus:outline-none border-2 py-2 w-full rounded-lg'>
+                            className='focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 focus:border-zinc-600 border-2 py-2 w-full rounded-lg'>
                         </input>
                         {errors.phone &&
                             <p className='absolute text-red-500 italic'>
@@ -143,7 +143,7 @@ function RegistorForm(props) {
                         <select
                             {...register('sex', { required: true })}
                             name='sex'
-                            className='focus:outline-none border-2 py-2 w-full rounded-lg'>
+                            className='focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 focus:border-zinc-600 border-2 py-2 w-full rounded-lg'>
                             <option value=''>Không chọn</option>
                             <option value='Nam'>Nam</option>
                             <option value='Nữ'>Nữ</option>
@@ -180,7 +180,7 @@ function RegistorForm(props) {
                             {...register('city', { required: true })}
                             name='city'
                             className=
-                            "mt-6 w-[75%] rounded-xl ml-16 border-2 h-16 focus:outline-none text-2xl font-light mb-3"
+                            "mt-6 w-[75%] rounded-xl ml-16 border-2 h-16 focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 focus:border-zinc-600 text-2xl font-light mb-3"
                             id="city3"
                             aria-label=".form-select-lg">
                             <option value=''>
@@ -213,7 +213,7 @@ function RegistorForm(props) {
                             {...register('district', { required: true })}
                             name="district"
                             className=
-                            "mt-6 w-[87%] mr-6 rounded-xl border-2 h-16 focus:outline-none text-2xl font-light mb-3"
+                            "mt-6 w-[87%] mr-6 rounded-xl border-2 h-16 focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 focus:border-zinc-600 text-2xl font-light mb-3"
                             id="district3"
                             aria-label=".form-select-lg">
                             <option value=''>
@@ -245,7 +245,7 @@ function RegistorForm(props) {
                             {...register('ward', { required: true })}
                             name="ward"
                             className=
-                            "mt-6 w-[75%] rounded-xl ml-16 border-2 h-16 focus:outline-none text-2xl font-light"
+                            "mt-6 w-[75%] rounded-xl ml-16 border-2 h-16 focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 focus:border-zinc-600 text-2xl font-light"
                             id="ward3"
                             aria-label=".form-select-lg">
                             <option value=''>
@@ -276,7 +276,7 @@ function RegistorForm(props) {
                     <input
                         {...register('adress', { required: true })}
                         name='adress'
-                        className='focus:outline-none border-2 py-2 w-[97%] rounded-lg'>
+                        className='focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 focus:border-zinc-600 border-2 py-2 w-[97%] rounded-lg'>
                     </input>
                     {errors.adress &&
                         <p className='absolute text-red-500 italic'>
@@ -307,7 +307,7 @@ function RegistorForm(props) {
                     <select
                         {...register('whereInfor', { required: true })}
                         name='whereInfor'
-                        className='focus:outline-none border-2 py-2 w-[97%] rounded-lg'>
+                        className='focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 focus:border-zinc-600 border-2 py-2 w-[97%] rounded-lg'>
 
 
                         <option value=''>

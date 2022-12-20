@@ -25,7 +25,7 @@ export default function RegistorForSale() {
     return (
         <div
             className=
-            'fullName w-full border-2 h-full rounded-[5rem] shadow-xl bg-white inset-y-0 left-[48%] text-center pb-14'>
+            'fullName w-full dark:!bg-dark dark:text-white border-2 h-full rounded-[5rem] shadow-xl bg-white inset-y-0 left-[48%] text-center pb-14'>
             <div
                 className='bg-[#e45f20] h-[74px] text-center text-white relative rounded-t-[5rem] font-semibold'>
                 <p
@@ -39,7 +39,7 @@ export default function RegistorForSale() {
                     <input
                         {...register('fullName', { required: true })}
                         name='fullName'
-                        className='w-[90%] focus:outline-none border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
+                        className='w-[90%] text-xl focus:outline-none dark:!bg-dark dark:text-white border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
                         placeholder='Họ và tên'>
                     </input>
                     {
@@ -57,7 +57,7 @@ export default function RegistorForSale() {
                             {...register('phone', { required: true })}
                             name='phone'
                             className=
-                            'phone w-[80%] focus:outline-none border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
+                            'phone w-[80%] text-xl focus:outline-none dark:!bg-dark dark:text-white border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
                             placeholder='Số điện thoại'>
                         </input>
                     </div>
@@ -73,7 +73,7 @@ export default function RegistorForSale() {
                             {...register('city', { required: true })}
                             name='city'
                             className=
-                            'py-3 w-[80%] text-[#7b7b7b] focus:outline-none rounded-lg border-[#e9e9e9] border-2'
+                            'py-3 w-[80%] text-[#7b7b7b] text-xl focus:outline-none dark:!bg-dark dark:text-white rounded-lg border-[#e9e9e9] border-2'
                             aria-label=".form-select-lg" id='citi5'>
                             <option value=''>Chọn tỉnh thành</option>
                         </select>

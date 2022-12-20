@@ -3,11 +3,11 @@ import './servicePlus.css'
 
 export default function ServicePlus() {
     return (
-        <div className='bg-[#fafafa] laptop:-mx-32 pt-20'>
+        <div className='bg-[#fafafa] pt-20 dark:!bg-dark dark:text-white'>
             <div className='text-center mb-24'>
                 <h3 className='text-5xl text-[#00467f] font-bold'>DỊCH VỤ CỘNG THÊM</h3>
             </div>
-            <div className='laptop:grid grid-cols-3 text-center laptop:pl-36 pb-32'>
+            <div className='laptop:grid grid-cols-3 text-center pb-32'>
                 <div className='col-span-1 w-[354px] mobile:m-auto mt-2 relative laptop:text-left'>
                     <a href='/service/giao-mot-phan'>
                         <img src="//theme.hstatic.net/200000472237/1000829412/14/cp_sv_add1_banner.jpg?v=502" alt="GIAO 1 PHẦN - TRẢ 1 PHẦN"></img>

@@ -33,7 +33,7 @@ export default function RegistorLogin() {
 
         <div
           className=
-          'fullName w-full border-2 h-full rounded-[5rem] shadow-xl bg-white inset-y-0 left-[48%] text-center pb-14'>
+          'fullName w-full border-2 h-full rounded-[5rem] dark:!bg-dark dark:text-white shadow-xl bg-white inset-y-0 left-[48%] text-center pb-14'>
 
           <div className='bg-[#e45f20] h-[74px] text-center text-white rounded-t-[5rem] font-bold'>
             <p className=' text-5xl pt-8'>
@@ -50,7 +50,7 @@ export default function RegistorLogin() {
                 {...register('fullName', { required: true })}
                 name='fullName'
                 type='text'
-                className='w-[90%] focus:outline-none border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
+                className='w-[90%] focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 text-xl focus:border-zinc-600 border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
                 placeholder='Họ và tên'>
               </input>
 
@@ -74,7 +74,7 @@ export default function RegistorLogin() {
                   name='email'
                   type='email'
                   className=
-                  'email w-full focus:outline-none checkEmail border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
+                  'email w-full focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 text-xl focus:border-zinc-600 checkEmail border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
                   placeholder='Email'>
                 </input>
 
@@ -94,7 +94,7 @@ export default function RegistorLogin() {
                   name='phone'
                   type='text'
                   className=
-                  'phone w-full focus:outline-none border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
+                  'phone w-full focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 text-xl focus:border-zinc-600 border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
                   placeholder='Số điện thoại'>
                 </input>
 
@@ -112,7 +112,7 @@ export default function RegistorLogin() {
 
               <select
                 {...register('city', { required: true })}
-                className='w-full py-3 text-[#7b7b7b] focus:outline-none rounded-lg border-[#e9e9e9] border-2'
+                className='w-full py-3 text-[#7b7b7b] focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 text-xl focus:border-zinc-600 rounded-lg border-[#e9e9e9] border-2'
                 aria-label=".form-select-lg"
                 name='city'
                 id='citi'>
@@ -137,7 +137,7 @@ export default function RegistorLogin() {
 
               <textarea
                 {...register('body')}
-                className='w-full border-[1px] py-10 focus:outline-none rounded-lg'
+                className='w-full border-[1px] py-10 focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 text-xl focus:border-zinc-600 rounded-lg'
                 id="form-body"
                 name="body"
                 placeholder="Nội dung cần tư vấn">
@@ -171,10 +171,10 @@ export default function RegistorLogin() {
 
         <div
           className=
-          'fullName w-full border-2 mobile:mt-6 laptop:mt-0 h-full rounded-[5rem] shadow-xl bg-white inset-y-0 left-[48%] text-center pb-14'>
+          'fullName dark:!bg-dark dark:text-white w-full border-2 mobile:mt-6 laptop:mt-0 h-full rounded-[5rem] shadow-xl bg-white inset-y-0 left-[48%] text-center pb-14'>
 
           <div
-            className='bg-[#00467f] tablet:h-[74px] text-center mobile:pb-6 tablet:pb-0 text-white rounded-t-[5rem] font-bold'>
+            className='bg-[#00467f] dark:!bg-dark dark:text-white tablet:h-[74px] text-center mobile:pb-6 tablet:pb-0 text-white rounded-t-[5rem] font-bold'>
 
 
             <p className=' text-5xl pt-8'>

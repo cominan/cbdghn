@@ -5,8 +5,8 @@ import SlideInforGhn from './SlideInforGhn'
 
 export default function InformationGhn() {
     return (
-        <div className='container laptop:mt-36  mobile:mt-56'>
-            <div className='tablet:-mx-28'>
+        <div className='mx-2 laptop:mt-36  mobile:mt-56'>
+            <div className=''>
                 <picture>
                     <source srcSet="//theme.hstatic.net/200000472237/1000829412/14/header_pageabout.jpg?v=509"></source>
                     <img src="//theme.hstatic.net/200000472237/1000829412/14/header_pageabout.jpg?v=509" alt="Về GHN"></img>
@@ -41,8 +41,8 @@ export default function InformationGhn() {
                         </p>
                     </div>
                     <div className='col-span-1 rounded-lg relative tablet:-top-[3rem]'>
-                        <div className='bg-gradient-to-b ghn relative ml-8 rounded-lg m-auto from-[#e9f7ff] to-[#f3f2fd] py-12 w-[80%]'>
-                            <p className='max-w-[70%] m-auto break-before-auto text-4xl leading-[3.5rem] tracking-wide font-[350]'>Dù bạn đang sở hữu một trang thương mại điện tử lớn, là chủ của một cửa hàng trực tuyến hay đơn giản một người bán hàng thông thường - GHN luôn sẵn sàng cung cấp dịch vụ giao nhận hàng chuyên nghiệp cho bạn.</p>
+                        <div className='bg-gradient-to-b ghn relative ml-8 dark:!bg-gradient-to-b dark:from-slate-800 dark:to-slate-800 dark:text-white rounded-lg m-auto from-[#e9f7ff] to-[#f3f2fd] py-12 w-[80%]'>
+                            <p className='max-w-[70%] dark:!bg-dark dark:text-white m-auto break-before-auto text-4xl leading-[3.5rem] tracking-wide font-[350]'>Dù bạn đang sở hữu một trang thương mại điện tử lớn, là chủ của một cửa hàng trực tuyến hay đơn giản một người bán hàng thông thường - GHN luôn sẵn sàng cung cấp dịch vụ giao nhận hàng chuyên nghiệp cho bạn.</p>
                         </div>
                         <div className='w-[70px] mt-10'>
                             <img src="//theme.hstatic.net/200000472237/1000829412/14/line_avatar1.jpg?v=509" alt=""></img>

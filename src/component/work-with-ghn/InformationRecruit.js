@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { BiCalendar } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 export default function InformationRecruit() {
 
@@ -22,12 +23,12 @@ export default function InformationRecruit() {
         }
     }, [hiddenseemore])
     return (
-        <div className='laptop:w-[92%] laptop:ml-16 relative mb-12'>
+        <div className='laptop:w-[92%] laptop:ml-16 relative mb-12 dark:!bg-dark dark:text-white'>
             <span className='text-left border-black border-b-[2px] w-full flex justify-between pb-6 pt-4'>
                 <p className='text-4xl font-bold'>
                     TIN TỨC TUYỂN DỤNG
                 </p>
-                <a href='/pages/work-ghn' className='text-2xl font-light hover:no-underline mr-4'>Xem thêm</a>
+                <Link to='/pages/work-ghn' className='text-2xl font-light hover:no-underline mr-4'>Xem thêm</Link>
             </span>
             <article className='text-left'>
                 <div className='flex mt-20 my-4 mobile:my-8'>
@@ -142,7 +143,7 @@ export default function InformationRecruit() {
                             title="[GHN EXPRESS] NHÂN VIÊN GIAO HÀNG _ HÀ NỘI _ HỒ CHÍ MINH"
                             rel="nofollow">
                             <picture>
-                                <img className='laptop:w-[242px] laptop:h-[146px] mobile:w-auto mobile:h-auto mobile:w-auto mobile:h-auto'
+                                <img className='laptop:w-[242px] laptop:h-[146px] mobile:w-auto mobile:h-auto'
                                     src="//file.hstatic.net/200000472237/file/ky_anh__4__759ed15db57c485b8b86fac6dc7bddfb_grande.png"
                                     alt="[GHN EXPRESS] NHÂN VIÊN GIAO HÀNG _ HÀ NỘI _ HỒ CHÍ MINH">
                                 </img>

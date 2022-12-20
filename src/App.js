@@ -2,20 +2,20 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import {
-  BrowserRouter as Router,
-  Route,
+  BrowserRouter as Router, Route,
   Routes
 } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import './App.css';
-import AuthProvider from './app/Context/AuthProvider';
 import RegistorwithAxios from './app/registor/RegistorwithAxios';
 import { dataAll } from './app/selector/dataCitySlice';
 import CommonTemplate from './common/CommonTemplate';
 import Login from './common/Login/Login';
 import ScrollTop from './component/frames/ScrollTop';
+
+
 
 function App() {
 
@@ -26,20 +26,14 @@ function App() {
     })
   }, [])
 
-
-
-
-
   return (
-    <div className=''>
+    <div className='m-auto dark:!bg-slate-800 dark:!text-white'>
       <Router>
-        <AuthProvider>
-          <Routes>
-            <Route path='*' element={<CommonTemplate />} />
-            <Route path='/registor' element={<RegistorwithAxios />} />
-            <Route path='/login' element={<Login />} />
-          </Routes>
-        </AuthProvider>
+        <Routes>
+          <Route path='*' element={<CommonTemplate />} />
+          <Route path='/registor' element={<RegistorwithAxios />} />
+          <Route path='/login' element={<Login />} />
+        </Routes>
       </Router>
       <ScrollTop />
     </div >

@@ -51,20 +51,25 @@ export default function RegistorLogin() {
 
 
     return (
-        <div className='mt-36 laptop:grid grid-cols-2 gap-8 text-center pb-32'>
-            <div className='col-span-1'>
+        <div className=
+            'mt-36 laptop:grid grid-cols-2 gap-8 text-center pb-32'>
+            <div className=
+                'col-span-1'>
 
 
                 <form
                     onSubmit={handleSubmit(data => console.log(data))}
                     className=
-                    'fullName w-full border-2 h-full rounded-[5rem] shadow-xl bg-white inset-y-0 left-[48%] text-center pb-14'>
+
+                    'fullName dark:!bg-dark dark:text-white w-full border-2 h-full rounded-[5rem] shadow-xl bg-white inset-y-0 left-[48%] text-center pb-14'>
 
                     <div
                         className=
+
                         'bg-[#e45f20] h-[74px] text-center text-white rounded-t-[5rem] font-bold'>
                         <p
-                            className=' text-5xl pt-8'>
+                            className=
+                            ' text-5xl pt-8'>
                             ĐĂNG KÝ NGAY
                         </p>
                     </div>
@@ -73,31 +78,37 @@ export default function RegistorLogin() {
                     <input
                         {...register('fullName', { required: true })}
                         className=
-                        'w-[90%] focus:outline-none mt-10 relative border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
+
+                        'w-[90%] focus:outline-none focus:ring-0 dark:!bg-dark dark:text-white focus:border-zinc-600 text-xl  mt-10 relative border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
                         placeholder='Họ và tên'>
                     </input>
 
                     {
                         errors.fullName &&
-                        <p className='italic text-red-600 absolute mobile:left-[10%] tablet:left-[17%] laptop:left-[6%]'>
+                        <p className=
+                            'italic text-red-600 absolute mobile:left-[10%] tablet:left-[17%] laptop:left-[6%]'>
                             Required value
                         </p>
                     }
 
 
-                    <div className='flex justify-around mt-4 relative'>
-                        <div className='flex w-[90%] mt-8 m-auto justify-between'>
+                    <div className=
+                        'flex justify-around mt-4 relative'>
+                        <div className=
+                            'flex w-[90%] mt-8 m-auto justify-between'>
                             <input
                                 {...register('email', { required: true })}
                                 type="email"
                                 className=
-                                'email w-[48%] focus:outline-none checkEmail border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
+
+                                'email w-[48%] focus:outline-none focus:ring-0 dark:!bg-dark dark:text-white focus:border-zinc-600 text-xl  checkEmail border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
                                 placeholder='Email'
                             >
                             </input>
                             {
                                 errors.email &&
-                                <p className='italic mt-14 text-red-600 mobile:left-[10%] absolute tablet:left-[5%]'>
+                                <p className=
+                                    'italic mt-14 text-red-600 mobile:left-[10%] absolute tablet:left-[5%]'>
                                     Required value
                                 </p>
                             }
@@ -109,22 +120,26 @@ export default function RegistorLogin() {
                                     }
                                 })}
                                 className=
-                                'phone w-[48%] focus:outline-none border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
+
+                                'phone w-[48%] focus:outline-none focus:ring-0 dark:!bg-dark dark:text-white focus:border-zinc-600 text-xl  border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
                                 placeholder='Số điện thoại'
                             ></input>
                             {
                                 errors.phone &&
-                                <p className='italic mt-14 text-red-600 absolute left-[52%]'>
+                                <p className=
+                                    'italic mt-14 text-red-600 absolute left-[52%]'>
                                     Required value
                                 </p>
                             }
                         </div>
                     </div>
 
-                    <div className='mt-8 flex justify-around mx-2 relative'>
+                    <div className=
+                        'mt-8 flex justify-around mx-2 relative'>
                         <select
                             {...register('city', { required: true })}
-                            className='w-[25%] block py-3 text-[#7b7b7b] focus:outline-none rounded-lg border-[#e9e9e9] border-2'
+                            className=
+                            'w-[25%] block py-3 text-[#7b7b7b] focus:outline-none focus:ring-0 dark:!bg-dark dark:text-white focus:border-zinc-600 text-xl  rounded-lg border-[#e9e9e9] border-2'
                             aria-label=".form-select-lg"
                             id='citi2'>
                             <option value=''>
@@ -133,14 +148,16 @@ export default function RegistorLogin() {
                         </select>
                         {
                             errors.city &&
-                            <p className='italic mt-14 text-red-600 absolute left-[5%]'>
+                            <p className=
+                                'italic mt-14 text-red-600 absolute left-[5%]'>
                                 Required value
                             </p>
                         }
 
                         <select
                             {...register('district', { required: true })}
-                            className='w-[25%] block py-3 text-[#7d7b7b] focus:outline-none  rounded-lg border-[#e9e9e9] border-2'
+                            className=
+                            'w-[25%] block py-3 text-[#7d7b7b] focus:outline-none focus:ring-0 dark:!bg-dark dark:text-white focus:border-zinc-600 text-xl   rounded-lg border-[#e9e9e9] border-2'
                             aria-label=".form-select-lg"
                             id='district2'>
                             <option value=''>
@@ -149,14 +166,16 @@ export default function RegistorLogin() {
                         </select>
                         {
                             errors.district &&
-                            <p className='italic mobile:hidden tablet:block mt-14 text-red-600 absolute left-[38%]'>
+                            <p className=
+                                'italic mobile:hidden tablet:block mt-14 text-red-600 absolute left-[38%]'>
                                 Required value
                             </p>
                         }
 
                         <select
                             {...register('ward', { required: true })}
-                            className='w-[25%] block py-3 text-[#7b7b7b] focus:outline-none rounded-lg border-[#e9e9e9] border-2'
+                            className=
+                            'w-[25%] block py-3 text-[#7b7b7b] focus:outline-none focus:ring-0 dark:!bg-dark dark:text-white focus:border-zinc-600 text-xl  rounded-lg border-[#e9e9e9] border-2'
                             aria-label=".form-select-lg"
                             id='ward2'>
                             <option value=''>
@@ -165,33 +184,40 @@ export default function RegistorLogin() {
                         </select>
                         {
                             errors.ward &&
-                            <p className='italic mobile:hidden tablet:block mt-14 text-red-600 absolute left-[72%]'>
+                            <p className=
+                                'italic mobile:hidden tablet:block mt-14 text-red-600 absolute left-[72%]'>
                                 Required value
                             </p>
                         }
                     </div>
 
-                    <div className='mt-8'>
+                    <div className=
+                        'mt-8'>
                         <div>
                             <input
                                 {...register('adress', { required: true })}
                                 name='adress'
-                                className='adress w-[90%] focus:outline-none border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
+                                className=
+                                'adress w-[90%] focus:outline-none focus:ring-0 dark:!bg-dark dark:text-white focus:border-zinc-600 text-xl  border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
                                 placeholder='Địa chỉ(số nhà,tên tòa nhà,tên đường,tên khu vực'>
                             </input>
                         </div>
                         {
                             errors.adress &&
-                            <p className='italic text-red-600 absolute mobile:left-[10%] tablet:left-[17%] laptop:left-[6%]'>
+                            <p className=
+                                'italic text-red-600 absolute mobile:left-[10%] tablet:left-[17%] laptop:left-[6%]'>
                                 Required value
                             </p>
                         }
                     </div>
-                    <div className='mt-8'>
+                    <div className=
+                        'mt-8'>
                         <select
                             {...register('older', { required: true })}
                             name='older'
-                            className="oder form-select text-[#868585] py-3 rounded-lg w-[90%] border-2 border-[#e9e9e9] focus:outline-none"
+                            className=
+
+                            "oder form-select text-[#868585] py-3 rounded-lg w-[90%] border-2 border-[#e9e9e9] focus:outline-none focus:ring-0 dark:!bg-dark dark:text-white focus:border-zinc-600 text-xl "
                             aria-label="Default select example">
                             <option value=''>Số đơn trung bình mỗi ngày</option>
                             <option value="Dưới 30 đơn/ngày">Dưới 30 đơn/ngày</option>
@@ -200,14 +226,16 @@ export default function RegistorLogin() {
                         </select>
                         {
                             errors.older &&
-                            <p className='italic text-red-600 absolute mobile:left-[10%] tablet:left-[17%] laptop:left-[6%]'>
+                            <p className=
+                                'italic text-red-600 absolute mobile:left-[10%] tablet:left-[17%] laptop:left-[6%]'>
                                 Required value
                             </p>
                         }
 
                     </div>
 
-                    <div className='mt-4'>
+                    <div className=
+                        'mt-4'>
                         <button
                             type='submit'
                             className=
@@ -218,26 +246,34 @@ export default function RegistorLogin() {
 
                 </form>
             </div>
-            <div className='col-span-1 mobile:mt-10 laptop:mt-0'>
+            <div className=
+                'col-span-1 mobile:mt-10 laptop:mt-0'>
                 <div className=
-                    'fullName w-full border-2 h-full rounded-[5rem] shadow-xl bg-white inset-y-0 left-[48%] text-center pb-14'>
+                    'fullName w-full dark:!bg-dark dark:text-white border-2 h-full rounded-[5rem] shadow-xl bg-white inset-y-0 left-[48%] text-center pb-14'>
                     <div className=
+
                         'bg-[#00467f] laptop:h-[74px] text-center text-white rounded-t-[5rem] font-bold'>
                         <p
-                            className='text-5xl mobile:pb-4 laptop:pb-0 pt-8'>
+                            className=
+                            'text-5xl mobile:pb-4 laptop:pb-0 pt-8'>
                             BẠN CÓ TÀI KHOẢN GHN ?
                         </p>
                     </div>
-                    <div className='mt-28'>
+                    <div className=
+                        'mt-28 dark:!bg-dark dark:text-white'>
                         <img
-                            className='w-[370px] h-[238px] m-auto'
+                            alt='img'
+                            className=
+                            'w-[370px] h-[238px] m-auto'
                             src="//theme.hstatic.net/200000472237/1000829412/14/bg-support-chuyenphat.jpg?v=502">
                         </img>
                     </div>
-                    <div className='mt-4'>
+                    <div className=
+                        'mt-4'>
                         <a href='https://sso.ghn.vn/v2/ssoLogin?app=import&returnUrl=https://khachhang.ghn.vn/sso-login?token='>
                             <button
                                 className=
+
                                 'border-[1px] hover:border-[1px] !bg-[#00467f] hover:border-[#00467f] border-[#00467f] mt-8 p-3 py-3 z-[1] rounded-xl location tablet:w-[50%] text-white font-semibold hover:text-[#00467f]'>
                                 ĐĂNG KÝ NHẬN TƯ VẤN
                             </button>

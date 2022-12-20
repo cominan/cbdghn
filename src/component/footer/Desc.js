@@ -4,7 +4,7 @@ import DescLocation from './desc/DescLocation'
 
 export default function Desc() {
   return (
-    <div>
+    <div className=''>
       <DescGhn />
       <div className='laptop:block tablet:hidden'>
         <DescLocation />

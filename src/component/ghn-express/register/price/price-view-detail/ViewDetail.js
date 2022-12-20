@@ -3,10 +3,8 @@ import TablePrice from './price-table-service/TablePrice'
 
 export default function ViewDetail() {
     return (
-        <div className='mt-32 mobile:mt-56'>
-
-
-            <div className='bg-[#fafafa] h-20 tablet:-mx-20 flex items-center text-[15px]'>
+        <div className='mt-32 mx-2 mobile:mt-56'>
+            <div className='bg-[#fafafa] !m-0 h-20 tablet:-mx-20 flex dark:!bg-dark dark:text-white items-center text-[15px]'>
                 <a
                     href='/'
                     className='ml-32 hover:text-primary hover:no-underline'>

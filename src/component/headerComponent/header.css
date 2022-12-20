@@ -32,7 +32,7 @@
     border: 1px solid #f15b1f;
     border-radius: 50%;
     background-repeat: no-repeat;
-    background-size: 93%;
+    background-size: 100%;
     background-position: center;
     position: relative;
 }
@@ -47,10 +47,9 @@
 
 }
 
-#modalTablet {
+.modalTablet {
     position: absolute;
     z-index: 31;
-    height: 100vh;
     top: 0;
     animation: modalTablet .5s ease-in;
 }

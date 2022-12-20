@@ -10,17 +10,17 @@ export default function HeaderContentSlide() {
         'GHN liên tục cập nhật<br>tuyến ảnh hưởng do dịch',
         'Dịch vụ giao hàng<br>thương mại điện tử'
         , 'Dịch vụ kho và<br>xử lý đơn hàng']
-
     const pagination = {
         el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
+            className = ' dark:!bg-dark dark:text-white swiper-pagination-bullet'
             return ('<span class="' + className + '">' + (menu[index]) + '</span>')
         },
     }
-    
+
     return (
-        <div className='laptop:mt-40 mobile:mt-52 laptop:-mx-20'>
+        <div className='laptop:mt-40 mobile:mt-52'>
             <Swiper
                 spaceBetween={30}
                 effect='fade'

@@ -22,7 +22,7 @@ export default function InforWork() {
                         <li key={index} className="border-t-[1px] mb-1 last:border-b-[1px] justify-between border-dashed flex hover:border-t-[1px] hover:border-dashed hover:shadow-md hover:bg-[#ecf9f9]">
                             <span className='py-8 ml-20'>
                                 <h3 className='mb-2'>{infor}</h3>
-                                <p>--Hồ Chí Minh</p>
+                                <p>--Hồ Chí Minh--</p>
                             </span>
                             <div className='flex mr-6 mobile:mt-6 laptop:mt-0'>
                                 <span>

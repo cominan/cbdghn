@@ -28,7 +28,7 @@ export default function SlideInforGhn() {
             <button className="prev hover:text-primary" onClick={() => plusSlides(-1)}>❮</button>
             <button className="next hover:text-primary" onClick={() => plusSlides(1)}>❯</button>
             <div style={{ display: 'block' }} className='rounded-lg mySlides relative mt-64 fadeTrans'>
-                <div className='bg-gradient-to-b people relative ml-8 rounded-lg m-auto from-[#e9f7ff] to-[#f3f2fd] py-32 px-24'>
+                <div className='bg-gradient-to-b dark:!bg-gradient-to-b dark:from-slate-500 dark:to-slate-800 dark:text-white people relative ml-8 rounded-lg m-auto from-[#e9f7ff] to-[#f3f2fd] py-32 px-24'>
                     <p className='m-auto break-before-auto text-4xl leading-[3.5rem] tracking-wide font-[350]'>GHN là một trong những đối tác vận chuyển uy tín của Shopee. Chúng tôi kỳ vọng với hệ thống phân loại hàng tự động, GHN không chỉ rút ngắn thời gian phân loại mà còn giúp cả người bán và người mua trên Shopee an tâm đơn hàng được giao nhanh hơn, an toàn hơn.</p>
                 </div>
                 <div className='flex mt-8 ml-8 items-center'>

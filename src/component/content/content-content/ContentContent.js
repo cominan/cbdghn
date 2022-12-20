@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ContentContent() {
   return (
-    <div className='mt-[50px] text-center laptop:container'>
+    <div className='mt-[50px] m-auto text-center laptop:container'>
       <div className='mt-[120px]'>
         <h1 className='text-[#00467f] text-5xl font-bold'>
           GIAO HÀNG NHANH HƠN 6 TIẾNG
@@ -20,7 +20,7 @@ export default function ContentContent() {
           <source type='video/mp4' src='../video/vid1.mp4'></source>
         </video>
         <video
-          className='laptop:hidden mobile:block'
+          className='laptop:hidden mobile:block w-full'
           autoPlay
           loop
           muted

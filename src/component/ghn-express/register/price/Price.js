@@ -8,7 +8,7 @@ export default function Price() {
         const image1 = document.getElementsByClassName('img1')
         const parent = document.getElementsByClassName('parent')
         for (var j = 0; j < parent.length; j++) {
-            if (parent[j].classList.contains('active')) {
+            if (parent[j].classList.contains('activePrice')) {
                 image1[j].style.display = 'none'
                 image2[j].style.display = 'block'
             }
@@ -16,12 +16,12 @@ export default function Price() {
         }
     }, [])
     function Open(m, n, f, id) {
-        const currentElememtId = document.getElementsByClassName('active')
+        const currentElememtId = document.getElementsByClassName('activePrice')
         const parent = document.getElementById(m)
         const img1 = document.getElementById(n)
         const img2 = document.getElementById(f)
-        currentElememtId[0].className = currentElememtId[0].className.replace('active', '')
-        parent.classList.toggle('active')
+        currentElememtId[0].className = currentElememtId[0].className.replace('activePrice', '')
+        parent.classList.toggle('activePrice')
         const image2 = document.getElementsByClassName('img2')
         const image1 = document.getElementsByClassName('img1')
         const all = document.getElementsByClassName('all')
@@ -32,7 +32,7 @@ export default function Price() {
             image1[i].style.display = 'block'
             image2[i].style.display = 'none'
         }
-        if (parent.classList.contains('active')) {
+        if (parent.classList.contains('activePrice')) {
             img1.style.display = 'none'
             img2.style.display = 'block'
         }
@@ -47,7 +47,7 @@ export default function Price() {
                 <div className='col-span-1'>
                     <ul>
                         <li className=''>
-                            <div onClick={(e) => Open('parent1', 'i1', 'i2', 'province')} id='parent1' className='h-[66px]  relative items-center active parent hover:drop-shadow-[20px] hover:transition-all ease-in-out delay-75 flex justify-start py-8 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
+                            <div onClick={(e) => Open('parent1', 'i1', 'i2', 'province')} id='parent1' className='h-[66px]  relative items-center activePrice parent hover:drop-shadow-[20px] hover:transition-all ease-in-out delay-75 flex justify-start py-8 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
                                 <span className='w-[25px] h-[25px]'>
                                     <img id='i1' alt='hello' className='img1 max-w-full w-[25px] h-[25px]' src="//theme.hstatic.net/200000472237/1000829412/14/sv_price_ic1.png?v=491"></img>
                                     <img id='i2' alt='hello' className='img2 max-w-full w-[25px] h-[25px]' src="///theme.hstatic.net/200000472237/1000829412/14/sv_price_icw1.png?v=491"></img>

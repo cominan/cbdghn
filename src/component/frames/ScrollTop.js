@@ -20,6 +20,7 @@ function ScrollTop() {
             top: 0,
             behavior: 'smooth'
         })
+        window.removeEventListener('scroll', toggleVisible)
     }
     window.addEventListener('scroll', toggleVisible)
 

@@ -24,7 +24,7 @@ export default function Technolgy() {
     },
   }
   return (
-    <div className='mt-[260px] container'>
+    <div className='!mt-[163px] !mx-2 container'>
       <div className='tablet:grid grid-cols-2'>
         <div className='col-span-1 break-before-auto text-left'>
           <h3 className='text-6xl font-semibold'>NHANH HƠN VỚI GHN</h3>
@@ -37,11 +37,11 @@ export default function Technolgy() {
           </div>
         </div>
       </div>
-      <div className='laptop:grid grid-cols-2 gap-2 tablet:-mx-24'>
-        <div className='col-span-1 tablet:px-40 bg-[#f8f8f8] py-40'>
+      <div className='laptop:grid grid-cols-2 gap-2'>
+        <div className=' dark:!bg-dark dark:text-white col-span-1 tablet:px-40 bg-[#f8f8f8] py-40'>
           <TechnolgyVideo data={src1} />
         </div>
-        <div className='col-span-1 tablet:px-40 bg-[#f8f8f8] py-40'>
+        <div className=' dark:!bg-dark dark:text-white col-span-1 tablet:px-40 bg-[#f8f8f8] py-40'>
           <InforGhn data={data.tab1} />
           <a href='https://khachhang.ghn.vn/'>
             <button className=
@@ -51,8 +51,8 @@ export default function Technolgy() {
           </a>
         </div>
       </div>
-      <div className='tablet:grid grid-cols-2 bg-[#f8f8f8] gap-2 tablet:-mx-24'>
-        <div className='col-span-1 laptop:pl-40 bg-white py-40'>
+      <div className='laptop:grid grid-cols-2 bg-[#f8f8f8] gap-2 dark:gap-0'>
+        <div className=' dark:!bg-dark dark:text-white col-span-1 laptop:pl-40 bg-white py-40'>
           <InforGhn data={data.tab2} />
           <div className='flex mt-12'>
             <a className='mr-6' href="https://apps.apple.com/us/app/ghn-express-giao-h%C3%A0ng-nhanh/id1203171490">
@@ -63,15 +63,15 @@ export default function Technolgy() {
             </a>
           </div>
         </div>
-        <div className='col-span-1 laptop:px-40 bg-white imgTech2 py-40'>
+        <div className=' dark:!bg-dark dark:text-white col-span-1 laptop:px-40 bg-white laptop:imgTech2 py-40'>
           <TechnolgyVideo data={src2} />
         </div>
       </div>
-      <div className='tablet:grid grid-cols-2 gap-2 tablet:-mx-24'>
-        <div className='col-span-1 laptop:px-40 py-40 bg-[#f8f8f8]'>
+      <div className='laptop:grid grid-cols-2 gap-2'>
+        <div className=' dark:!bg-dark dark:text-white col-span-1 laptop:px-40 py-40 bg-[#f8f8f8]'>
           <TechnolgyVideo data={src3} />
         </div>
-        <div className='col-span-1 tablet:px-40 py-40 bg-[#f8f8f8]'>
+        <div className=' dark:!bg-dark dark:text-white col-span-1 tablet:px-40 py-40 bg-[#f8f8f8]'>
           <InforGhn data={data.tab3} />
           <a href='https://khachhang.ghn.vn/'>
             <button className=

@@ -54,7 +54,7 @@ export default function Register() {
 
     return (
         <div>
-            <div className='relative laptop:-ml-20 laptop:-mr-20'>
+            <div className='relative'>
 
 
                 <div>
@@ -63,6 +63,7 @@ export default function Register() {
                             srcSet='//theme.hstatic.net/200000472237/1000829412/14/banner-sv-chuyenphat.jpg?v=491'>
                         </source>
                         <img
+                            alt='img'
                             src='//theme.hstatic.net/200000472237/1000829412/14/banner-sv-chuyenphat.jpg?v=491'>
                         </img>
                     </picture>
@@ -74,7 +75,7 @@ export default function Register() {
 
                     <div
                         className=
-                        'tablet:h-[46px] tablet:w-[600px] mobile:ml-12 tablet:ml-[0px] laptop:w-[676px] mobile:h-[46px] mobile:w-[80%] inset-y-0  laptop:right-[26px] bg-primary z-10 rounded-t-[5rem] mt-14 text-white font-bold text-3xl laptop:absolute '>
+                        'tablet:h-[46px] tablet:w-full mobile:ml-12 tablet:ml-[0px] laptop:w-[672px] mobile:h-[46px] mobile:w-[80%] inset-y-0  laptop:right-[26px] bg-primary z-10 rounded-t-[5rem] mt-14 text-white font-bold text-3xl laptop:absolute '>
                         <p className='laptop:mt-6 mobile:pt-4 laptop:pt-0'>
                             ĐĂNG KÝ NGAY
                         </p>
@@ -84,7 +85,7 @@ export default function Register() {
                     <form
                         onSubmit={handleSubmit((data) => console.log(data))}
                         className=
-                        'fullName laptop:mt-28 mobile:w-[80%] m-auto tablet:w-full  laptop:ml-0 laptop:w-[50%] laptop:h-[76%] rounded-t-2xl rounded-b-[5rem] bg-white inset-y-0 laptop:left-[48%] laptop:absolute text-center'>
+                        'fullName laptop:mt-28 mobile:w-[80%] dark:!bg-dark dark:text-white m-auto tablet:w-full laptop:ml-0 laptop:w-[50%] laptop:h-[76%] rounded-t-2xl rounded-b-[5rem] bg-white inset-y-0 laptop:left-[48%] laptop:absolute text-center'>
                         <div className='mt-10'>
 
 
@@ -93,7 +94,7 @@ export default function Register() {
                                 name='fullName'
                                 type='text'
                                 className=
-                                'w-[90%] focus:outline-none border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
+                                'w-[90%] dark:!bg-dark dark:text-white focus:outline-none focus:ring-0 text-xl focus:border-zinc-600 border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
                                 placeholder='Họ và tên'>
                             </input>
 
@@ -113,7 +114,7 @@ export default function Register() {
                                 type='email'
                                 id='email'
                                 className=
-                                'email w-[48%] focus:outline-none checkEmail border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
+                                'email w-[48%] dark:!bg-dark dark:text-white focus:outline-none focus:ring-0 text-xl focus:border-zinc-600 checkEmail border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
                                 placeholder='Email'>
                             </input>
                             {
@@ -132,7 +133,7 @@ export default function Register() {
                                 name='phone'
                                 type='number'
                                 className=
-                                'phone w-[48%] focus:outline-none border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
+                                'phone w-[48%] dark:!bg-dark dark:text-white focus:outline-none focus:ring-0 text-xl focus:border-zinc-600 border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
                                 placeholder='Số điện thoại'>
                             </input>
 
@@ -152,7 +153,7 @@ export default function Register() {
                                 {...register('city', { required: true })}
                                 name='city'
                                 className=
-                                'w-[25%] py-3 text-[#7b7b7b] focus:outline-none rounded-lg border-[#e9e9e9] border-2'
+                                'w-[25%] py-3 dark:!bg-dark dark:text-white text-[#7b7b7b] focus:outline-none focus:ring-0 text-xl focus:border-zinc-600 rounded-lg border-[#e9e9e9] border-2'
                                 aria-label=".form-select-lg"
                                 id='citi'>
                                 <option value=''>
@@ -171,7 +172,7 @@ export default function Register() {
                                 {...register('district', { required: true })}
                                 name='district'
                                 className=
-                                'w-[25%] py-3 text-[#7d7b7b] focus:outline-none  rounded-lg border-[#e9e9e9] border-2'
+                                'w-[25%] py-3 dark:!bg-dark dark:text-white text-[#7d7b7b] focus:outline-none focus:ring-0 text-xl focus:border-zinc-600  rounded-lg border-[#e9e9e9] border-2'
                                 aria-label=".form-select-lg"
                                 id='district'>
                                 <option value=''>
@@ -190,7 +191,7 @@ export default function Register() {
                                 {...register('ward', { required: true })}
                                 name='ward'
                                 className=
-                                'w-[25%] py-3 text-[#7b7b7b] focus:outline-none rounded-lg border-[#e9e9e9] border-2'
+                                'w-[25%] py-3 dark:!bg-dark dark:text-white text-[#7b7b7b] focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 text-xl focus:border-zinc-600 rounded-lg border-[#e9e9e9] border-2'
                                 aria-label=".form-select-lg"
                                 id='ward'>
                                 <option value=''>
@@ -214,7 +215,7 @@ export default function Register() {
                                     {...register('adress', { required: true })}
                                     name='adress'
                                     type='text'
-                                    className='adress w-[90%] focus:outline-none border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
+                                    className='adress w-[90%] focus:outline-none dark:!bg-dark dark:text-white focus:ring-0 text-xl focus:border-zinc-600 border-[#e9e9e9] border-[1px] rounded-lg p-2 py-3'
                                     placeholder='Địa chỉ(số nhà,tên tòa nhà,tên đường,tên khu vực'>
                                 </input>
                             </div>
@@ -235,7 +236,7 @@ export default function Register() {
                                 {...register('older', { required: true })}
                                 name='older'
                                 className=
-                                "oder form-select text-[#868585] py-3 rounded-lg w-[90%] border-2 border-[#e9e9e9] focus:outline-none"
+                                "oder dark:!bg-dark dark:text-white form-select text-[#868585] py-3 rounded-lg w-[90%] border-2 border-[#e9e9e9] focus:outline-none focus:ring-0 text-xl focus:border-zinc-600"
                                 aria-label="Default select example">
                                 <option
                                     value=''>

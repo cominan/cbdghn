@@ -8,7 +8,7 @@ import ServicePlus from './service-plus/ServicePlus'
 
 export default function GhnEpress() {
   return (
-    <div className='laptop:mt-36 mobile:mt-48'>
+    <div className='laptop:mt-36 mobile:mt-48 dark:!bg-dark dark:text-white'>
         <Register />
         <Policy />
         <Price />
