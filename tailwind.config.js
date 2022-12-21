@@ -1,6 +1,3 @@
-/** @type {import('tailwindcss').Config} */
-
-const { transparent } = require('tailwindcss/colors');
 
 module.exports = {
   content: [
