@@ -14,7 +14,7 @@ function AuthProvider({ children }) {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        const unsubrise = auth.onAuthStateChanged((user) => {
+        const unsubrise = auth.onAuthStateChanged( (user) => {
             if (user) {
                 const { displayName, email, uid, photoURL } = user
                 setUser({ displayName, email, uid, photoURL })

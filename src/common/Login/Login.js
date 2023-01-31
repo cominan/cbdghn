@@ -11,7 +11,6 @@ export default function Login() {
     const { register, handleSubmit, formState: { errors } } = useForm()
     const navigate = useNavigate()
     const handleLoginEmailPsw = (data) => {
-        console.log('1');
         signInWithEmailAndPassword(auth, data.email, data.password)
             .then((userCredential) => {
                 // Signed in 
@@ -25,7 +24,7 @@ export default function Login() {
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
-                alert('Login failed,plz check email or psw again')
+                alert('Login failed,plz check email or psw again', errorCode)
             });
     }
     return (

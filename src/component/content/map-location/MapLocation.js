@@ -1,5 +1,4 @@
 import React from 'react'
-import DiachiBuuCuc from './DiachiBuuCuc'
 import Location from '../../../app/map-location/Location'
 import Map from './Map'
 
@@ -15,7 +14,6 @@ export default function MapLocation() {
             <div className='laptop:grid tablet:block laptop:grid-cols-3'>
                 <div>
                     <Location />
-                    <DiachiBuuCuc />
                 </div>
                 <Map />
             </div>
