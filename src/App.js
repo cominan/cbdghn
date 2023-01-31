@@ -13,14 +13,13 @@ import ScrollTop from './component/frames/ScrollTop';
 
 
 function App() {
+  
   const dispatch = useDispatch()
   useEffect(() => {
     axios(`${process.env.REACT_APP_MAP}`).then(function (reuslt) {
       dispatch(dataAll(reuslt.data))
     })
   }, [])
-
-
 
   return (
     <div className='m-auto dark:!bg-slate-800 dark:!text-white'>
